@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<body>
+
+{% if user.is_authenticated %}
+<h1>logged in succesfully</h1>
+<p>hello {{user.username}},good afternoon</p>
+<p>welcome to billsnap</p>
+<h2>about ot launch soon</h2>
+
+<button type="button"><a href="{% url 'logout' %}">LogOut</a></button>
+
+{% endif %}
+
+</body>
+</html>
