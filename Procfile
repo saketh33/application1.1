@@ -1,1 +1,1 @@
-web: gunicorn <name of your project>.wsgi - log-file -
+web: gunicorn <web: gunicorn billsnap.wsgi --bind 0.0.0.0:$PORT>.wsgi - log-file -
